@@ -1,0 +1,19 @@
+QMainWindow {
+    background-color: #1e1e1e;
+}
+
+QWidget#note {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+}
+
+QWidget#note:hover {
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+QWidget#note QLabel {
+    color: #eeeeee;
+    font-size: 16px;
+}
