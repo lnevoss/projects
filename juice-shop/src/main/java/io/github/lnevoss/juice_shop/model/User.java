@@ -22,12 +22,6 @@ import lombok.Setter;
 @Getter @Setter @NoArgsConstructor
 @Table(name = "users")
 public class User {
-
-    private enum Role {
-        CUSTOMER,
-        ADMIN
-    }
-
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
