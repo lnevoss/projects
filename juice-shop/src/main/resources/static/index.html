@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violet Press — Fresh Juice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo" aria-label="Violet Press home">
+        <!-- Temporary SVG logo -->
+        <svg
+          class="logo-icon"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="21" cy="21" r="19" fill="#352047"/>
+          <path
+            d="M13 15.5C13 13.567 14.567 12 16.5 12H25.5C27.433 12 29 13.567 29 15.5V26.5C29 28.433 27.433 30 25.5 30H16.5C14.567 30 13 28.433 13 26.5V15.5Z"
+            stroke="#F4EFE8"
+            stroke-width="2"
+          />
+          <path
+            d="M17 12V9M25 12V9M17 23C19 25 23 25 25 23"
+            stroke="#F4EFE8"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <span>Violet Press</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="cart.html" class="cart-link">
+        Cart <span class="cart-count">0</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+          <p class="eyebrow">Cold pressed · Made fresh</p>
+
+          <h1>
+            Good juice,<br />
+            <span>simple things.</span>
+          </h1>
+
+          <p class="hero-text">
+            Freshly pressed fruit, carefully chosen ingredients, and
+            nothing unnecessary. Find your next favorite bottle below.
+          </p>
+
+          <a href="#shop" class="button button-dark">
+            Browse juices
+          </a>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="juice-orb orb-one"></div>
+          <div class="juice-orb orb-two"></div>
+          <div class="juice-orb orb-three"></div>
+
+          <div class="hero-bottle">
+            <div class="bottle-cap"></div>
+            <div class="bottle-body">
+              <span>VP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Shop -->
+    <section class="shop-section" id="shop">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Fresh from the press</h2>
+          </div>
+
+          <p class="section-description">
+            Small-batch juices made with fruit, vegetables,
+            and a little imagination.
+          </p>
+        </div>
+
+
+        <div class="product-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-image juice-orange">
+              <span class="product-label">01</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Citrus</p>
+                <h3>Golden Hour</h3>
+              </div>
+
+              <p class="product-description">
+                Orange, pineapple &amp; ginger.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€6.50</strong>
+
+                <div class="product-actions">
+                  <a href="products/golden-hour.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Golden Hour')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-image juice-purple">
+              <span class="product-label">02</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Berry</p>
+                <h3>Midnight Berry</h3>
+              </div>
+
+              <p class="product-description">
+                Blueberry, blackberry &amp; apple.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€7.00</strong>
+
+                <div class="product-actions">
+                  <a href="products/midnight-berry.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Midnight Berry')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-image juice-green">
+              <span class="product-label">03</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Green</p>
+                <h3>Garden Glow</h3>
+              </div>
+
+              <p class="product-description">
+                Apple, cucumber, lime &amp; mint.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€6.75</strong>
+
+                <div class="product-actions">
+                  <a href="products/garden-glow.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Garden Glow')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-image juice-red">
+              <span class="product-label">04</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Root</p>
+                <h3>Ruby Root</h3>
+              </div>
+
+              <p class="product-description">
+                Beetroot, apple, lemon &amp; ginger.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€7.25</strong>
+
+                <div class="product-actions">
+                  <a href="products/ruby-root.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Ruby Root')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <div class="product-image juice-yellow">
+              <span class="product-label">05</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Tropical</p>
+                <h3>Soft Sunrise</h3>
+              </div>
+
+              <p class="product-description">
+                Mango, orange &amp; passion fruit.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€7.50</strong>
+
+                <div class="product-actions">
+                  <a href="products/soft-sunrise.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Soft Sunrise')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 6 -->
+          <article class="product-card">
+            <div class="product-image juice-dark">
+              <span class="product-label">06</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Special</p>
+                <h3>Violet Tonic</h3>
+              </div>
+
+              <p class="product-description">
+                Blackcurrant, grape, lemon &amp; rosemary.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€8.00</strong>
+
+                <div class="product-actions">
+                  <a href="products/violet-tonic.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Violet Tonic')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 7 -->
+          <article class="product-card">
+            <div class="product-image juice-pink">
+              <span class="product-label">07</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Fruit</p>
+                <h3>Pink Orchard</h3>
+              </div>
+
+              <p class="product-description">
+                Pear, strawberry, apple &amp; lemon.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€6.75</strong>
+
+                <div class="product-actions">
+                  <a href="products/pink-orchard.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Pink Orchard')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 8 -->
+          <article class="product-card">
+            <div class="product-image juice-cream">
+              <span class="product-label">08</span>
+              <div class="fruit-shape"></div>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <p class="product-category">Creamy</p>
+                <h3>Oat &amp; Date</h3>
+              </div>
+
+              <p class="product-description">
+                Oat milk, date, banana &amp; cinnamon.
+              </p>
+
+              <div class="product-bottom">
+                <strong>€7.25</strong>
+
+                <div class="product-actions">
+                  <a href="products/oat-date.html" class="inspect-button">
+                    Inspect
+                  </a>
+
+                  <button
+                    class="add-button"
+                    type="button"
+                    onclick="addToCart('Oat & Date')"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Newsletter / CTA -->
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2>Fresh things, occasionally.</h2>
+        </div>
+
+        <form class="newsletter-form">
+          <input
+            type="email"
+            placeholder="Your email address"
+            aria-label="Email address"
+          />
+          <button type="submit" class="button button-dark">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="21" cy="21" r="19" fill="#F4EFE8"/>
+              <path
+                d="M13 15.5C13 13.567 14.567 12 16.5 12H25.5C27.433 12 29 13.567 29 15.5V26.5C29 28.433 27.433 30 25.5 30H16.5C14.567 30 13 28.433 13 26.5V15.5Z"
+                stroke="#352047"
+                stroke-width="2"
+              />
+              <path
+                d="M17 12V9M25 12V9M17 23C19 25 23 25 25 23"
+                stroke="#352047"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <span>Violet Press</span>
+          </a>
+
+          <p>
+            Freshly pressed drinks for slow mornings,
+            busy afternoons, and everything between.
+          </p>
+        </div>
+
+
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="about.html">About us</a>
+          <a href="menu.html">Menu</a>
+          <a href="locations.html">Locations</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <a href="mailto:hello@violetpress.example">
+            hello@violetpress.example
+          </a>
+          <a href="tel:+491234567890">
+            +49 123 456 7890
+          </a>
+          <span>Mon–Fri · 08:00–18:00</span>
+        </div>
+
+
+        <div class="footer-column">
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Violet Press</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart(productName) {
+      cartCount++;
+
+      document.querySelector(".cart-count").textContent = cartCount;
+
+      console.log(productName + " added to cart.");
+    }
+  </script>
+
+</body>
+</html>
