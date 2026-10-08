@@ -1,54 +1,59 @@
-in progress structure, update as we go
+# PLAN
 
-src/main/java/io/github/Invoss/juice_shop/
+> in progress structure, update as we go
+
+src/main/java/io/github/lnevoss/juice_shop/
 │
-├── JuiceShopApplication.java
+├── [x] JuiceShopApplication.java
 │
 ├── config/
-│   └── SecurityConfig.java
+│   └── [/] SecurityConfig.java
 │
 ├── controller/
-│   ├── AuthController.java
-│   ├── ProductController.java
-│   └── OrderController.java
+│   ├── [ ] AuthController.java
+│   ├── [ ] ProductController.java
+│   ├── [ ] CartController.java
+│   ├── [ ] NewsletterController.java
+│   └── [x] NavigationController.java
 │
 ├── dto/
 │   ├── auth/
-│   │   ├── LoginRequest.java
-│   │   ├── LoginResponse.java
-│   │   └── RegisterRequest.java
+│   │   ├── [x] LoginRequest.java
+│   │   ├── [x] LoginResponse.java
+│   │   ├── [x] RegisterRequest.java
+│   │   └── [x] RegisterResponse.java
 │   │
 │   ├── product/
-│   │   ├── ProductRequest.java
-│   │   └── ProductResponse.java
+│   │   ├── [ ] ProductRequest.java
+│   │   └── [ ] ProductResponse.java
 │   │
 │   └── order/
-│       ├── OrderRequest.java
-│       ├── OrderItemRequest.java
-│       ├── OrderResponse.java
-│       └── OrderItemResponse.java
+│       ├── [x] OrderRequest.java
+│       ├── [x] OrderItemRequest.java
+│       ├── [x] OrderResponse.java
+│       └── [x] OrderItemResponse.java
 │
 ├── exception/
-│   ├── ProductNotFoundException.java
-│   ├── OrderNotFoundException.java
-│   ├── UserNotFoundException.java
-│   ├── InsufficientStockException.java
-│   └── GlobalExceptionHandler.java
+│   ├── [x] ProductNotFoundException.java
+│   ├── [x] OrderNotFoundException.java
+│   ├── [x] UserNotFoundException.java
+│   ├── [x] InsufficientStockException.java
+│   └── [ ] GlobalExceptionHandler.java
 │
 ├── model/
-│   ├── Order.java
-│   ├── OrderItem.java
-│   ├── Product.java
-│   ├── User.java
-│   └── Role.java
+│   ├── [x] Order.java
+│   ├── [x] OrderItem.java
+│   ├── [x] Product.java
+│   ├── [x] User.java
+│   └── [x] Role.java
 │
 ├── repository/
-│   ├── OrderRepository.java
-│   ├── ProductRepository.java
-│   └── UserRepository.java
+│   ├── [x] OrderRepository.java
+│   ├── [x] ProductRepository.java
+│   └── [x] UserRepository.java
 │
 └── service/
-    ├── AuthService.java
-    ├── OrderService.java
-    ├── ProductService.java
-    └── UserService.java
+    ├── [/] AuthService.java
+    ├── [/] OrderService.java
+    ├── [ ] ProductService.java
+    └── [ ] UserService.java

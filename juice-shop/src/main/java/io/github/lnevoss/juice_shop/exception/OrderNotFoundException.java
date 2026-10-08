@@ -1,4 +1,14 @@
 package io.github.lnevoss.juice_shop.exception;
 
-public class OrderNotFoundException {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter  @NoArgsConstructor 
+public class OrderNotFoundException extends Exception{
+    private String msg;
+
+    OrderNotFoundException(String msg){
+        super(msg);
+        this.msg = msg;
+    }
 }

@@ -1,4 +1,8 @@
 package io.github.lnevoss.juice_shop.exception;
 
-public class GlobalExceptionHandler {
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor 
+public class GlobalExceptionHandler extends Exception{
+
 }

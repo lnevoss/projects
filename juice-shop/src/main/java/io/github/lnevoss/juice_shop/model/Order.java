@@ -53,6 +53,9 @@ public class Order {
     @JoinColumn(name = "user_id")
     private User user;
 
+    private OrderStatus status;
+
+    // better relegated to service?
     public void addItem(OrderItem item) {
         items.add(item);
         item.setOrder(this);
