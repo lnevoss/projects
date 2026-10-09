@@ -2,6 +2,7 @@
 
 > in progress structure, update as we go
 
+```text
 src/main/java/io/github/lnevoss/juice_shop/
 │
 ├── [x] JuiceShopApplication.java
@@ -57,3 +58,4 @@ src/main/java/io/github/lnevoss/juice_shop/
     ├── [/] OrderService.java
     ├── [ ] ProductService.java
     └── [ ] UserService.java
+```

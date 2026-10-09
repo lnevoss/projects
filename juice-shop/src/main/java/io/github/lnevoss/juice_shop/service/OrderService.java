@@ -32,7 +32,7 @@ public class OrderService {
     @Transactional 
     public void addToCart(Long userId, Long productId, int quantity){
         Order cart = orderRepository
-            .findByUserIdAndOrderStatus(userId, OrderStatus.CART)
+            .findByUserIdAndStatus(userId, OrderStatus.CART)
             .orElseGet(() -> createCart(userId));
 
         Product product = productRepository
@@ -57,12 +57,12 @@ public class OrderService {
 
     @Transactional 
     public void removeFromCart(Long orderItemId, Long userId){
-        orderItemRepository.deleteByOrderItemIdAndUserId(orderItemId, userId);
+        orderItemRepository.deleteByIdAndOrder_User_Id(orderItemId, userId);
     }
 
     public void updateOrderStatus(Long orderId, Long userId, OrderStatus status){
         Order order = orderRepository
-            .findByUserIdAndOrderId(userId, orderId)
+            .findByUserIdAndId(userId, orderId)
             .orElse(null);
 
         if(order != null){
