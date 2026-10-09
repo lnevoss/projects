@@ -30,8 +30,8 @@ src/main/java/io/github/lnevoss/juice_shop/
 │   │   └── [x] RegisterResponse.java
 │   │
 │   ├── product/
-│   │   ├── [~] ProductRequest.java
-│   │   └── [~] ProductResponse.java
+│   │   ├── [x] ProductRequest.java
+│   │   └── [x] ProductResponse.java
 │   │
 │   └── order/
 │       ├── [x] OrderRequest.java
@@ -44,7 +44,7 @@ src/main/java/io/github/lnevoss/juice_shop/
 │   ├── [x] OrderNotFoundException.java
 │   ├── [x] UserNotFoundException.java
 │   ├── [x] InsufficientStockException.java
-│   └── [ ] GlobalExceptionHandler.java
+│   └── [/] GlobalExceptionHandler.java
 │
 ├── model/
 │   ├── [x] Order.java
@@ -61,18 +61,28 @@ src/main/java/io/github/lnevoss/juice_shop/
 └── service/
     ├── [/] AuthService.java
     ├── [/] OrderService.java
-    ├── [ ] ProductService.java
+    ├── [~] ProductService.java
     └── [ ] UserService.java
 ```
 
-## AuthService.java
+## WIP
+
+### Add Thymeleaf or another template generator for products
+
+> Should be easy enough, right..?
+
+### AuthService.java
 
 > Session and JWT tokens
 
-## OrderService.java
+### OrderService.java
 
 > Not sure yet, but may require more work later
 
-## SecurityConfig.java
+### SecurityConfig.java
 
 > comment out authentication before production, fix it later
+
+### GlobalExceptionHandler.java
+
+> update with new exception in the future, if needed
