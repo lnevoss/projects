@@ -72,3 +72,7 @@ src/main/java/io/github/lnevoss/juice_shop/
 ## OrderService.java
 
 > Not sure yet, but may require more work later
+
+## SecurityConfig.java
+
+> comment out authentication before production, fix it later

@@ -44,7 +44,8 @@ public class OrderService {
                 .findByUserIdAndStatus(userId, OrderStatus.CART)
                 .orElseGet(() -> createCart(userId));
 
-        Product product = productRepository.findById(productId)
+        Product product = productRepository
+                .findById(productId)
                 .orElseThrow(() -> new ProductNotFoundException());
 
         OrderItem item = orderItemRepository
@@ -80,7 +81,6 @@ public class OrderService {
                     "Cannot change status from " + order.getStatus() + " to " + newStatus);
         }
         order.setStatus(newStatus);
-        // no save() needed: the entity is managed inside the transaction
     }
 
     private Order createCart(Long userId) {
