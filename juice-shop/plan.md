@@ -3,6 +3,11 @@
 > in progress structure, update as we go
 
 ```text
+[x] - finished (presumably)
+[~] - may be redundant
+[/] - in progress
+[ ] - #TODO
+
 src/main/java/io/github/lnevoss/juice_shop/
 │
 ├── [x] JuiceShopApplication.java
@@ -11,7 +16,7 @@ src/main/java/io/github/lnevoss/juice_shop/
 │   └── [/] SecurityConfig.java
 │
 ├── controller/
-│   ├── [ ] AuthController.java
+│   ├── [x] AuthController.java
 │   ├── [ ] ProductController.java
 │   ├── [ ] CartController.java
 │   ├── [ ] NewsletterController.java
@@ -25,8 +30,8 @@ src/main/java/io/github/lnevoss/juice_shop/
 │   │   └── [x] RegisterResponse.java
 │   │
 │   ├── product/
-│   │   ├── [ ] ProductRequest.java
-│   │   └── [ ] ProductResponse.java
+│   │   ├── [~] ProductRequest.java
+│   │   └── [~] ProductResponse.java
 │   │
 │   └── order/
 │       ├── [x] OrderRequest.java
@@ -59,3 +64,11 @@ src/main/java/io/github/lnevoss/juice_shop/
     ├── [ ] ProductService.java
     └── [ ] UserService.java
 ```
+
+## AuthService.java
+
+> Session and JWT tokens
+
+## OrderService.java
+
+> Not sure yet, but may require more work later

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 // menu.html
 // locations.html
 // contact.html
+// account.html
 // cart.html
 // faq.html
 // privacy.html
@@ -33,6 +34,10 @@ public class NavigationController {
     }
     @GetMapping("/contact")
     public String contact() {
+        return "index.html";
+    }
+    @GetMapping("/account")
+    public String account() {
         return "index.html";
     }
     @GetMapping("/cart")
